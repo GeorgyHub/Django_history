@@ -11,5 +11,11 @@ class Person(models.Model):
     status = models.BooleanField(null=True)
     is_published = models.BooleanField(default=True)
 
+    def __str__(self):
+        return f"{self.firstname} {self.lastname}"
+
 class Questions(models.Model):
     question = models.TextField(null=True)
+
+    def __str__(self):
+        return f"{self.question}"
