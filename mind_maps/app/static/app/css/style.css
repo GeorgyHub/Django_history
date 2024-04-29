@@ -7,6 +7,12 @@ body{
 }
 /* header */
 header{
+    padding: 10px 5%;
     background-color: #595959;
     color: white;
+}
+.a_reg{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
 }
