@@ -18,11 +18,19 @@ class Person(models.Model):
     def get_full_years(self):
         pass
 
+    class Meta:
+        verbose_name = 'Человек'
+        verbose_name_plural = 'Люди'
+
 class Questions(models.Model):
     question = models.TextField(null=True)
 
     def __str__(self):
         return f"{self.question}"
+    
+    class Meta:
+        verbose_name = 'Вопрос'
+        verbose_name_plural = 'Вопросы'
 
 class Post(MPTTModel):
     name = models.CharField(max_length=50, unique=True)
