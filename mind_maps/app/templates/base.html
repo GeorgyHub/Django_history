@@ -14,7 +14,7 @@
             <div class="block_main">
                 <ul class="link_main">
                     <li>
-                        <a class="a_main" href="">Главная</a>
+                        <a class="a_main" href="{% url 'home' %}">Главная</a>
                     </li>
                     <li>
                         <a class="a_main" href="">Главная</a>
@@ -42,6 +42,9 @@
             <p>Welcome to my first Django project!</p>
             {% block content %}
             <h1>Главная</h1>
+            {% for item in quest %}
+                <p>{{ item.question }}</p>
+            {% endfor %}
             {% endblock %}
         </div>
         <footer>
