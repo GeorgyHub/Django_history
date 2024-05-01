@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app.apps.AppConfig',
     'towns.apps.TownsConfig',
+    'account.apps.AccountConfig',
     'mptt',
 ]
 
